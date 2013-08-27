@@ -192,4 +192,4 @@ class NginxGeventSocketIOWorker(GeventSocketIOWorker):
     Nginx is not compatible with websockets and therefore will not add the
     wsgi.websocket key to the wsgi environment.
     """
-    transports = ['xhr-polling']
+    transports = ['websocket']
